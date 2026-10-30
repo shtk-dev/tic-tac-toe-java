@@ -7,6 +7,14 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("行を入力してください（1〜3）：");
+		
+		int row = sc.nextInt();//GPTの勧めで、行番号を保存するなら`row`という名前もおすすめ　にinputから変更した
+		
+		System.out.println("入力した行は" + row + "です");
+		
+		
+		
 		
 		
 		char[][] board = {
