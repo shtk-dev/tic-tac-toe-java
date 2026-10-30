@@ -14,7 +14,19 @@ public class Main {
 		System.out.println("入力した行は" + row + "です");
 		
 		
-		
+		System.out.print("列を入力してください（1〜3）：");
+		int col = sc.nextInt();
+		System.out.println("入力した列は" + col + "です");
+		/*
+		  GPT
+		  順番	処理	理由
+①	Scannerを生成	　入力を受け取る準備
+②	printで案内を表示	　ユーザーに何を入力するか伝える
+③	nextIntで入力を受け取る	入力された整数をrowに保存
+④	printlnで結果を表示	保存した値を確認する
+
+今回は「準備 → 案内 → 入力 → 結果表示」**の順番にすると、処理の流れが理解しやすい。
+		 */
 		
 		
 		char[][] board = {
