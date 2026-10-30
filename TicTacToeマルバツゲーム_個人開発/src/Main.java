@@ -16,7 +16,7 @@ public class Main {
 		char mark = 'X';//step3-4①②
 		
 		while(turn <= 9) {
-			System.out.println(turn);
+			System.out.println("ターン" + turn + "：" + mark + "の番です");
 			
 		
 		
