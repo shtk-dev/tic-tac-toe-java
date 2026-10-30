@@ -13,6 +13,8 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int turn = 1;
+		char mark = 'X';//step3-4①②
+		
 		while(turn <= 9) {
 			System.out.println(turn);
 			
@@ -42,7 +44,8 @@ public class Main {
 		
 		
 		
-		board[row - 1][col - 1] = 'X';//スッキリ入門p166 //step2-4 feat: update selected board cell 実質step2-5も済みだった。以下の2重for文はかなり前のstep1で作成してたので。
+		board[row - 1][col - 1] = mark;//スッキリ入門p166 //step2-4 feat: update selected board cell 実質step2-5も済みだった。以下の2重for文はかなり前のstep1で作成してたので。
+		//step3-4①②
 		
 		for(int i = 0; i < board.length; i++) {//スッキリ入門p131 //i<3よりも、i < board.lengthの方が保守性高い
 			for(int j = 0; j < board[i].length ; j++) {//GPT board[i].length → i行目に何列あるか
@@ -56,7 +59,11 @@ public class Main {
 			}
 			System.out.println();//()の中の""は合ってもなくても実行結果は同じやわ。GPTは""ナシを推奨
 		}
-		
+		if(mark == 'X') {//step3-4③
+			mark = 'O';
+		}else {
+			mark = 'X';
+		}
 		turn++;
 		}
 		
