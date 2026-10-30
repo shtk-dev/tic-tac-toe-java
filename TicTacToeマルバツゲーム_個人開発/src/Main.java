@@ -15,8 +15,8 @@ public class Main {
 		int turn = 1;
 		while(turn <= 9) {
 			System.out.println(turn);
-			turn++;
-		}
+			
+		
 		
 		System.out.print("行を入力してください（1〜3）：");
 		
@@ -57,8 +57,8 @@ public class Main {
 			System.out.println();//()の中の""は合ってもなくても実行結果は同じやわ。GPTは""ナシを推奨
 		}
 		
-		
-		
+		turn++;
+		}
 		
 		
 		
