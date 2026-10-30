@@ -35,7 +35,7 @@ public class Main {
 				{'-', '-', '-'}
 		};
 		
-		board[1][1] = 'X';//スッキリ入門p166
+		board[row - 1][col - 1] = 'X';//スッキリ入門p166 //step2-4 feat: update selected board cell
 		
 		for(int i = 0; i < board.length; i++) {//スッキリ入門p131 //i<3よりも、i < board.lengthの方が保守性高い
 			for(int j = 0; j < board[i].length ; j++) {//GPT board[i].length → i行目に何列あるか
