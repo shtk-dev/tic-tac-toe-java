@@ -4,6 +4,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
+		char[][] board = {//初期化を一番上に持ってきた。step3-1 refactor: initialize board before player input 
+				{'-', '-', '-'},//silver p53 {}の中にさらに{}を書く
+				{'-', '-', '-'},
+				{'-', '-', '-'}
+		};
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -29,11 +34,7 @@ public class Main {
 		 */
 		
 		
-		char[][] board = {
-				{'-', '-', '-'},//silver p53 {}の中にさらに{}を書く
-				{'-', '-', '-'},
-				{'-', '-', '-'}
-		};
+		
 		
 		board[row - 1][col - 1] = 'X';//スッキリ入門p166 //step2-4 feat: update selected board cell 実質step2-5も済みだった。以下の2重for文はかなり前のstep1で作成してたので。
 		
