@@ -1,13 +1,22 @@
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
 		char[][] board = {
 				{'-', '-', '-'},//silver p53 {}の中にさらに{}を書く
 				{'-', '-', '-'},
 				{'-', '-', '-'}
 		};
+		
+		board[1][1] = 'X';//スッキリ入門p166
+		
 		for(int i = 0; i < board.length; i++) {//スッキリ入門p131 //i<3よりも、i < board.lengthの方が保守性高い
 			for(int j = 0; j < board[i].length ; j++) {//GPT board[i].length → i行目に何列あるか
 				System.out.print(board[i][j] + " ");
